@@ -1,0 +1,30 @@
+/*CREATING A Product table to store product informations */
+CREATE TABLE Product (
+productID nvarchar(10),
+productName nvarchar(20),
+productPrice decimal(10,2),
+CONSTRAINT productID_pk PRIMARY KEY(productID) /* assigning PK */
+);
+
+
+/*CREATING A Customer table to store customer details */
+CREATE TABLE Customer (
+customerID nvarchar(10),
+customerName nvarchar(15),
+customerAddress nvarchar(30),
+CONSTRAINT customerID_pk PRIMARY KEY(customerID) /* assigning PK */
+);
+
+
+/*CREATING A [Sale Order] table to store details of the sale orders */
+CREATE TABLE [Sale Order] (
+orderID nvarchar(10),
+productID nvarchar(10),
+orderDate date,
+orderProduct nvarchar(20),
+orderPaid nvarchar(5),
+customerID nvarchar(10),
+CONSTRAINT customerID_fk FOREIGN KEY(customerID) REFERENCES Customer, /* assigning FK */
+CONSTRAINT productID_fk FOREIGN KEY(productID) REFERENCES Product, /* assigning FK */
+PRIMARY KEY (orderID, productID) /* composite PK */
+);

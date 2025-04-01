@@ -1,0 +1,1 @@
+SELECT fName, lName, position, propertyNo FROM Staff, PropertyForRent ORDER BY lName

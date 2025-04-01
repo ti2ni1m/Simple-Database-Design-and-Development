@@ -1,0 +1,18 @@
+/*Inserting product details into the product table */
+INSERT INTO Product VALUES(1, 'Pillow', 55);
+INSERT INTO Product VALUES(2, 'Bowl', 10);
+INSERT INTO Product VALUES(3, 'Vacuum', 85.54);
+INSERT INTO Product VALUES(4, 'Bottle', 12);
+INSERT INTO Product VALUES(5, 'Bed', 350);
+
+/*Inserting customer details into the customer table */
+INSERT INTO Customer VALUES(91, 'Jack', 'Parramatta');
+INSERT INTO Customer VALUES(92, 'Ella', 'Newcastle');
+INSERT INTO Customer VALUES(93, 'Nitesh', '38 Park St, Flemington');
+
+/*Inserting sale order details into the [Sale Order] table */
+INSERT INTO [Sale Order] VALUES(101, 1, '04/03/2022', 'Pillow', 'Yes', 92);
+INSERT INTO [Sale Order] VALUES(102, 3, '05/04/2022', 'Vacuum', 'No', 93);
+INSERT INTO [Sale Order] VALUES(103, 5, '06/07/2022', 'Bed', 'Yes', 91);
+INSERT INTO [Sale Order] VALUES(101, 2, '04/03/2022', 'Bowl', 'Yes', 92);
+INSERT INTO [Sale Order] VALUES(102, 4, '05/04/2022', 'Bottle', 'No', 93);

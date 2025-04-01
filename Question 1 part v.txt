@@ -1,0 +1,3 @@
+SELECT * FROM [Sale Order]
+INNER JOIN Product
+ON [Sale Order].productID =  Product.productID

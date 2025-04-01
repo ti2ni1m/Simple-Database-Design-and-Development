@@ -1,0 +1,5 @@
+SELECT [Sale Order].orderID, [Sale Order].customerID, SUM(Product.productPrice) AS 'totalPayment'
+FROM [Sale Order] 
+INNER JOIN Product 
+ON [Sale Order].productID = Product.productID 
+GROUP BY [Sale Order].orderID, [Sale Order].customerID; 

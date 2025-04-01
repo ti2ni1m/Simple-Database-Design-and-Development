@@ -1,0 +1,15 @@
+SELECT * FROM [Sale Order] ORDER BY orderID;
+
+SELECT * FROM [Sale Order] ORDER BY orderDate;
+
+SELECT * FROM Customer
+INNER JOIN [Sale Order]
+ON Customer.customerID = [Sale Order].customerID
+ORDER BY
+customerName
+
+SELECT * FROM Customer
+INNER JOIN [Sale Order]
+ON Customer.customerID = [Sale Order].customerID
+ORDER BY
+customerAddress

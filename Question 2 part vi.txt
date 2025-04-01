@@ -1,0 +1,3 @@
+SELECT  c.fName, c.lName, p.propertyNo, v.propertyNo, p.street, p.city, v.viewDate 
+FROM Viewing v, Client c, PropertyForRent p WHERE c.clientNo = v.clientNo 
+ORDER BY v.viewDate, p.city, p.street;

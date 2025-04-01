@@ -1,0 +1,1 @@
+SELECT fName, lName, propertyNo, postcode, p.ownerNo FROM PropertyForRent p, PrivateOwner o WHERE p.ownerNo=o.ownerNo ORDER by fName;
